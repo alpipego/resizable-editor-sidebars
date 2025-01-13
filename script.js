@@ -1,15 +1,20 @@
 jQuery(window).ready(function(){
+    const sidebar = jQuery('.interface-interface-skeleton__sidebar');
     setTimeout(function(){
-        jQuery('.interface-interface-skeleton__sidebar').width(localStorage.getItem('toast_rs_personal_sidebar_width'))
-        jQuery('.interface-interface-skeleton__sidebar').resizable({
+        sidebar.width(localStorage.getItem('toast_rs_personal_sidebar_width'))
+        sidebar.resizable({
             handles: 'w',
             resize: function(event, ui) {
                 jQuery(this).css({'left': 0});
                 localStorage.setItem('toast_rs_personal_sidebar_width', jQuery(this).width());
-           }
+            }
         });
-        
+
         determine_if_sidebar_open();
+
+        if (sidebar.length > 0) {
+            clearInterval( interval );
+        }
 
     }, 500);
 
@@ -18,10 +23,10 @@ jQuery(window).ready(function(){
     });
 
     function determine_if_sidebar_open(){
-        if(jQuery('button[aria-controls="edit-post:document"]').hasClass('is-pressed')){
-            jQuery('.edit-post-layout').addClass('is-sidebar-opened');
-        }else{
-            jQuery('.edit-post-layout').removeClass('is-sidebar-opened');
+        if (jQuery('button[aria-controls="edit-post:document"].is-pressed,button[aria-controls="edit-post:block"].is-pressed').length) {
+            jQuery(".edit-post-layout").addClass("is-sidebar-opened");
+        } else {
+            jQuery(".edit-post-layout").removeClass("is-sidebar-opened");
         }
     }
 
