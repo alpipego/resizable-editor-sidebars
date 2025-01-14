@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "postcss": "^8.5.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-minify": "^1.1.0",
+    "terser": "^5.37.0"
+  },
+  "scripts": {
+    "css": "postcss assets/src/resizable-editor-sidebars.css -o assets/dist/resizable-editor-sidebars.css",
+    "js": "terser assets/src/resizable-editor-sidebars.js -o assets/dist/resizable-editor-sidebars.js",
+    "build": "npm run css && npm run js"
+  }
+}

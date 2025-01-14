@@ -15,8 +15,11 @@
  */
 
 add_action('enqueue_block_editor_assets', static function () {
-	$url = plugin_dir_url(__FILE__);
+	$url       = plugin_dir_url(__FILE__) . 'assets/';
+	$srcOrDist = (defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) || in_array(wp_get_environment_type(), ['local', 'development'], true) ? 'src' : 'dist';
+	$url .= $srcOrDist;
+	$version   = '1.0.0';
 
-	wp_enqueue_script('resizable_script', $url . 'script.js', ['jquery-ui-resizable'], '1.0.0', true);
-	wp_enqueue_style('resizable_style', $url . 'style.css');
+	wp_enqueue_script('resizable_script', $url . '/resizable-editor-sidebars.js', ['jquery-ui-resizable'], $version, true);
+	wp_enqueue_style('resizable_style', $url . '/resizable-editor-sidebars.css', [], $version);
 });
