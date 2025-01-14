@@ -1,9 +1,9 @@
 === Resizable Editor Sidebar ===
-Contributors: aaronj1998, davros20
-Requires at least: 5.5
-Tested up to: 6.6
+Contributors: alpipego, aaronj1998, davros20
+Requires at least: 6.5.0
+Tested up to: 6.7
 Tags: User Interface, Preferences
-Stable tag: 1.0.2
+Stable tag: 1.0.0
 License: GPLv2
 
 An intuitive solution to make the default WordPress Gutenberg sidebar resizable.
