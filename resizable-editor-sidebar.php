@@ -8,10 +8,12 @@
  * Requires PHP: 7.4
  * Author: Alex Goller
  * Author URI: https://alpipego.com/
+ * Additional Authors: David Foreman, Aaron Jones
  * GitHub Plugin URI: alpipego/resizable-editor-sidebars
  * Primary Branch: stable
  * Release Asset: true
- * Licence: GPLv2 or later
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  */
 
 add_action('enqueue_block_editor_assets', static function () {

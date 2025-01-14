@@ -28,4 +28,8 @@ You can install this plugin in multiple ways:
 
 ## Attribution
 
-This is a fork of https://wordpress.org/plugins/resizable-editor-sidebar/. Props to [aaronj1998](https://profiles.wordpress.org/aaronj1998/) and [@davros20](https://profiles.wordpress.org/davros20/) for their initial work.
+This plugin is licensed under [GPL-2.0-or-later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html). See the LICENSE file for more details.
+
+This fork is based on [Resizable Editor Sidebar](https://wordpress.org/plugins/resizable-editor-sidebar/) which is distributed under the same license. It retains the original contributors' work and incorporates additional changes by Alexander Goller.
+
+Props to [aaronj1998](https://profiles.wordpress.org/aaronj1998/) and [@davros20](https://profiles.wordpress.org/davros20/) for their initial work.
