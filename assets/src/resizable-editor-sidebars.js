@@ -105,7 +105,7 @@
                     localStorage.setItem(`rse_${sidebar.side}_sidebar_width`, sidebar.el.offsetWidth);
                 }
             },
-            toggleSelectors: ['.editor-document-tools__document-overview-toggle', '.editor-document-tools__inserter-toggle'],
+            toggleSelectors: ['.editor-document-tools__document-overview-toggle', '.editor-document-tools__inserter-toggle', '.block-editor-inserter__quick-inserter-expand'],
             default: 350
         }
     };
